@@ -1,0 +1,168 @@
+@import "animation";
+@rem:67.5rem;
+
+.listCss(){
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+	height: 100%;
+	display: none;
+	background-repeat: no-repeat;	
+    background-size: 100% 100%; 
+    z-index: 3;
+};
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+    list-style: none;
+    li{
+        transition: 1s transform;
+    }
+}
+html,body{
+	height: 100%;
+	overflow: hidden;
+}
+#wrap{
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	overflow: hidden;
+	canvas{
+		position: absolute;
+		left: 0;
+		top: 0;
+		transition: 1s opacity;
+		z-index: 50;
+	}
+	.list{
+		height: 100%;
+		.list1{
+			background-image: url(../img/b.png);
+			.listCss();
+			ul{
+			    font-size: 60/@rem;
+                color: white;
+                position: absolute;
+                left: 20%;
+                top: 65%;
+                li{
+                    transition: 1s transform;
+                }
+			}
+		}
+		.list2{
+			background-image: url(../img/c.png);
+			.listCss();
+			ul{
+			    position: absolute;
+			    left: 50%;
+			    top: 50%;
+			    transform: translate(-50%,-50%);
+			    li{ 
+			        position: absolute;
+			        width: 180/@rem;
+			        height:180/@rem;
+			        background-size:100% 100% ;
+			        transition: 1s all;
+			        &:nth-child(1){
+                        background-image: url(../img/c1.png);
+                    }
+                    &:nth-child(2){
+                    background-image: url(../img/c2.png);
+                    }
+                    &:nth-child(3){
+                        background-image: url(../img/c3.png);
+                    }
+                    &:nth-child(4){
+                        background-image: url(../img/c4.png);
+                    }
+                    &:nth-child(5){
+                        background-image: url(../img/c5.png);
+                    }
+                    &:nth-child(6){
+                        background-image: url(../img/c6.png);
+                    }
+			    }
+			    
+			}
+		}
+		.list3{
+			background-image: url(../img/d.png);
+			.listCss();
+			.imgRotate{
+			    position: absolute;
+			    top: 60%;
+			    left: 50%;
+			    width: 820/@rem;
+			    height: 340/@rem;
+			    margin-left: -410/@rem;
+			    background: url(../img/d1.png);
+			    background-size: 100% 100%;
+			    transition: 1s transform;
+			}
+		}
+		.list4{
+			background-image: url(../img/e.png);
+			.listCss();
+			div{
+			    font-size: 40/@rem;
+                color: white;
+                border: 1px #FFF solid;
+                box-shadow: 0 0 15/@rem #FFF;
+                border-radius: 5/@rem;
+                position: absolute;
+                overflow: hidden;
+                transition: 1s ;
+                &:nth-child(1){
+                    width: 440/@rem;
+                    height: 480/@rem;
+                    left: 4%;
+                    top: 15%;
+                }
+                &:nth-child(2){
+                    width: 500/@rem;
+                    height: 300/@rem;
+                    left: 50%;
+                    top: 19%;
+                }
+                &:nth-child(3){
+                    width: 220/@rem;
+                    height: 560/@rem;
+                    left: 78%;
+                    top: 40%;
+                }
+			}
+		}
+		.list5{
+			background-image: url(../img/f.png);
+			.listCss();
+		}
+	}
+	.music{
+		position: absolute;
+	    right: 10px;
+	    top: 10px;
+		width: 47px;
+	    height: 47px;
+	    background: url(../img/music.png) no-repeat;
+	    background-size: cover;
+	    z-index: 5;
+	    animation: xuanz 1s infinite linear;
+	}
+	.anTopDown{
+	    width: 180/@rem;
+        height: 100/@rem;
+        background: url(../img/arr.png) no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        bottom: 40/@rem;
+        left: 50%;
+        margin-left: -90/@rem;
+        z-index: 7;
+        animation: topDown 1s  infinite;
+	}
+}
